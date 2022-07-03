@@ -17,7 +17,8 @@ MonoBehaviour:
       type: 3}
   m_RendererFeatures:
   - {fileID: 3892312105430989663}
-  m_RendererFeatureMap: 5fbb2acf3c450436
+  - {fileID: 4103678009671846671}
+  m_RendererFeatureMap: 5fbb2acf3c4504360f8b12576831f338
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -39,10 +40,10 @@ MonoBehaviour:
   m_AssetVersion: 1
   m_OpaqueLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_TransparentLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_DefaultStencilState:
     overrideStencilState: 0
     stencilReference: 0
@@ -67,15 +68,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa9e46fa92c109945abc8e241dc576c1, type: 3}
-  m_Name: RenderToTexture
+  m_Name: RenderBackgroundDepth
   m_EditorClassIdentifier: 
   m_Active: 1
-  passTag: RenderToTextureFeature
+  passTag: RenderBackgroundDepth
   Event: 150
   colorOutput: {fileID: 8400000, guid: 7bd2f8fc1f95b4e45816733d35e33ca1, type: 2}
   depthOutput: {fileID: 8400000, guid: 9b74bd4fa5eb29745833d8a8448addcf, type: 2}
   filterSettings:
-    RenderQueueType: 0
     LayerMask:
       serializedVersion: 2
       m_Bits: 64
@@ -91,5 +91,40 @@ MonoBehaviour:
     passOperation: 0
     failOperation: 0
     zFailOperation: 0
-  overrideMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  overrideMaterial: {fileID: 2100000, guid: b46c8b9cda090b9469add15a7fa892af, type: 2}
+  overrideMaterialPassIndex: 0
+--- !u!114 &4103678009671846671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9e46fa92c109945abc8e241dc576c1, type: 3}
+  m_Name: RenderForegroundColor
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passTag: RenderForegroundColor
+  Event: 250
+  colorOutput: {fileID: 8400000, guid: 59df4fd4aa01a734b8a60e73e66d13b5, type: 2}
+  depthOutput: {fileID: 8400000, guid: 2eb3aa08365d5634f9b218c184c5e6f4, type: 2}
+  filterSettings:
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 128
+    PassNames: []
+  depthStateSettings:
+    overrideDepthState: 0
+    depthCompareFunction: 4
+    enableWrite: 1
+  stencilSettings:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 0
+    failOperation: 0
+    zFailOperation: 0
+  overrideMaterial: {fileID: 0}
   overrideMaterialPassIndex: 0

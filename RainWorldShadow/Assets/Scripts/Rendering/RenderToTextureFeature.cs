@@ -15,13 +15,11 @@ public class RenderToTextureFeature : ScriptableRendererFeature
 	[System.Serializable]
 	public class FilterSettings
 	{
-		public RenderQueueType RenderQueueType;
 		public LayerMask LayerMask;
 		public string[] PassNames;
 
 		public FilterSettings()
 		{
-			RenderQueueType = RenderQueueType.Opaque;
 			LayerMask = 0;
 		}
 	}
