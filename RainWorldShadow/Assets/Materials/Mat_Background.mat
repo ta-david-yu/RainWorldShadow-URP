@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BackgroundMaterial
+  m_Name: Mat_Background
   m_Shader: {fileID: -6465566751694194690, guid: 972b410ac7d464b4a81aa72792fe03de,
     type: 3}
   m_ValidKeywords: []
