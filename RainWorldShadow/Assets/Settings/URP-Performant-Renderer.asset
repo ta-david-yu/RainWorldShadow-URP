@@ -18,7 +18,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 3892312105430989663}
   - {fileID: 4103678009671846671}
-  m_RendererFeatureMap: 5fbb2acf3c4504360f8b12576831f338
+  - {fileID: 9126127508025293195}
+  m_RendererFeatureMap: 5fbb2acf3c4504360f8b12576831f3388bb9c4c29d84a67e
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -68,11 +69,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa9e46fa92c109945abc8e241dc576c1, type: 3}
-  m_Name: RenderBackgroundDepth
+  m_Name: RenderBackgroundDepthToTexture
   m_EditorClassIdentifier: 
   m_Active: 1
-  passTag: RenderBackgroundDepth
-  Event: 150
+  passTag: RenderBackgroundDepthToTexture
+  Event: 250
   colorOutput: {fileID: 8400000, guid: 7bd2f8fc1f95b4e45816733d35e33ca1, type: 2}
   depthOutput: {fileID: 8400000, guid: 9b74bd4fa5eb29745833d8a8448addcf, type: 2}
   filterSettings:
@@ -103,10 +104,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa9e46fa92c109945abc8e241dc576c1, type: 3}
-  m_Name: RenderForegroundColor
+  m_Name: RenderForegroundColorToTexture
   m_EditorClassIdentifier: 
   m_Active: 1
-  passTag: RenderForegroundColor
+  passTag: RenderForegroundColorToTexture
   Event: 250
   colorOutput: {fileID: 8400000, guid: 59df4fd4aa01a734b8a60e73e66d13b5, type: 2}
   depthOutput: {fileID: 8400000, guid: 2eb3aa08365d5634f9b218c184c5e6f4, type: 2}
@@ -128,3 +129,42 @@ MonoBehaviour:
     zFailOperation: 0
   overrideMaterial: {fileID: 0}
   overrideMaterialPassIndex: 0
+--- !u!114 &9126127508025293195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
+  m_Name: RenderForegroundTransparentObjects
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    passTag: RenderForegroundTransparentObjects
+    Event: 450
+    filterSettings:
+      RenderQueueType: 1
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 128
+      PassNames: []
+    overrideMaterial: {fileID: 0}
+    overrideMaterialPassIndex: 0
+    overrideDepthState: 0
+    depthCompareFunction: 4
+    enableWrite: 1
+    stencilSettings:
+      overrideStencilState: 0
+      stencilReference: 0
+      stencilCompareFunction: 8
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+    cameraSettings:
+      overrideCamera: 0
+      restoreCamera: 1
+      offset: {x: 0, y: 0, z: 0, w: 0}
+      cameraFieldOfView: 60
