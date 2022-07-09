@@ -31,7 +31,11 @@ Other than the differences between the rendering passes, I've also implemented s
 ![image](https://user-images.githubusercontent.com/8101387/178085134-3ec4a2d3-6d6f-43b8-bcfb-bf18737c84e4.png)  
 2. Depth texture is generated with the geometry of the object, the alpha value is not taken into consideration. This could possibly be solved by adding an extra pass that renders the alpha value buffer and uses that to cutoff depth texture.  
 ![image](https://user-images.githubusercontent.com/8101387/178085157-7ff03583-fca7-43a6-a8af-7c30e2de7405.png)
-3. No anti-aliasing on the shadows. 
+3. No anti-aliasing on the shadows, which is actually perfect if it's a pixel art game.  
+
+https://user-images.githubusercontent.com/8101387/178085706-a628d059-c49c-4ebf-8066-743d13d87c0c.mp4
+
+
 
 ## Relevant Assets
 All the assets/code that are relevant to the effect are located in these folders:
