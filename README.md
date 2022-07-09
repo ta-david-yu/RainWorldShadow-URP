@@ -23,7 +23,7 @@ And here is my implementation:
 
 The benefit of my implementation are that the background obejcts could also be dynamic (As shown in my result video, the rotating background fan). The downside is that there is an extra pass in the process.
 
-Other than the differences between the rendering passes, I've also implemented semi-transparent shadows with this system. 
+Other than the differences between the rendering passes, I've also implemented semi-transparent shadows with this system.  
 ![image](https://user-images.githubusercontent.com/8101387/178085218-8cb4ebdd-58bf-4b38-943a-db8658a68505.png)  
 
 ## Known Limitations
