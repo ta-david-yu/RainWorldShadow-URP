@@ -46,11 +46,12 @@ All the assets/code that are relevant to the effect are located in these folders
 * Assets/Materials
 
 ## Bonus  
-The assets are taken from one of my school projects at CGL. I wrote the procedural tail animation that is used on the ghost character.
+The art assets are from one of my school projects at CGL. I also implemented the procedural character animation.
+The relevant code is located under Assets/Scripts/Character/Animation 
 
 ## Credits
 * Joar Jakobsson:  
   For sharing the implementation details in RW.
 * Maria Eom:  
-  For making the ghost character sprites for the school project.
+  For making the ghost character sprites.
 
