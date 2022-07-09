@@ -3,7 +3,9 @@
 Rain World's 2D screen-space shadow effect implemented in Unity Universal Rendering Pipeline. This implementation is based on the [tweets](https://twitter.com/joar_lj/status/1525445116789497856?t=E0TvPUclpmWs7LO9pV-xhQ&amp;s=19) made by Rain World's developer Joar Jakobsson.  
 
 **Result**  
-https://user-images.githubusercontent.com/8101387/178085189-a93dbc9b-e99a-41fd-b3e6-6e262e5c9716.mp4
+https://user-images.githubusercontent.com/8101387/178085659-091bb77c-6cf8-49b1-b13b-010d1721d0bf.mp4
+
+
 
 ## Technique overview
 As mentioned in the previous section, most of the implementation details are the same as the one described in the tweets. For the original implementation, Joar has already explained it perfectly in his original tweets. Therefore I recommend that you read the tweets directly :P
@@ -28,8 +30,7 @@ Other than the differences between the rendering passes, I've also implemented s
 ![image](https://user-images.githubusercontent.com/8101387/178085134-3ec4a2d3-6d6f-43b8-bcfb-bf18737c84e4.png)  
 2. Depth texture is generated with the geometry of the object, the alpha value is not taken into consideration. This could possibly be solved by adding an extra pass that renders the alpha value buffer and uses that to cutoff depth texture.  
 ![image](https://user-images.githubusercontent.com/8101387/178085157-7ff03583-fca7-43a6-a8af-7c30e2de7405.png)
-3. No anti-aliasing on the shadows. But this also means the crispy pixelated shadows shown here are possible too! 
-https://user-images.githubusercontent.com/8101387/178085404-4aba2820-7649-42cf-9675-5cf3e7181ae2.mp4
+3. No anti-aliasing on the shadows. 
 
 ## Relevant Assets
 All the assets/code that are relevant to the effect are located in these folders:
