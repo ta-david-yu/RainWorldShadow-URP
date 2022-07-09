@@ -6,6 +6,13 @@ Rain World's 2D screen-space shadow effect implemented in Unity Universal Render
 
 https://user-images.githubusercontent.com/8101387/178085659-091bb77c-6cf8-49b1-b13b-010d1721d0bf.mp4
 
+## Relevant Assets
+All the assets/code that are relevant to the effect are located in these folders:
+* Assets/Settings/URP-Peformant.asset & Assets/Settings/URP-Peformant-Renderer.asset  
+* Assets/GameData/Rendering
+* Assets/Scripts/Rendering
+* Assets/Shaders
+* Assets/Materials
 
 
 ## Technique overview
@@ -35,15 +42,6 @@ Other than the differences between the rendering passes, I've also implemented s
 
 https://user-images.githubusercontent.com/8101387/178085706-a628d059-c49c-4ebf-8066-743d13d87c0c.mp4
 
-
-
-## Relevant Assets
-All the assets/code that are relevant to the effect are located in these folders:
-* Assets/Settings/URP-Peformant.asset & Assets/Settings/URP-Peformant-Renderer.asset  
-* Assets/GameData/Rendering
-* Assets/Scripts/Rendering
-* Assets/Shaders
-* Assets/Materials
 
 ## Bonus  
 The art assets are from one of my school projects at CGL. I also implemented the procedural character animation.
